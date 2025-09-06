@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kushal Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Kushal Choudhary</h1>
+        <p>
+          Welcome to my portfolio! Explore my work, skills, and how to connect
+          with me.
+        </p>
+        <nav aria-label="Main Navigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="about">
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <img
+            src="images/kushal_profile.jpg"
+            alt="Kushal Choudhary"
+            class="about-img"
+          />
+          <div class="about-text">
+            <p>
+              Hello! I'm Kushal, a passionate web developer with a love for
+              creating innovative digital solutions. I am a Master's student in
+              Computer Science at UT Dallas, with a dual Bachelor's degree in
+              Information Technology and Data Science. When I'm not coding, I
+              enjoy exploring new technologies, reading tech blogs, and
+              contributing to open-source projects.
+            </p>
+            <p>
+              I specialize in full-stack development, AI, and machine learning.
+              My experience includes working on diverse projects like building
+              scalable platforms, developing AI-driven solutions, and
+              implementing blockchain for secure transactions. With a strong
+              foundation in various technologies including React, Python, and
+              cloud services, I strive to create impactful solutions that
+              enhance user experience and streamline processes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <article>
+          <h3>InsightGen: AI-Powered Product Review Analysis</h3>
+          <p class="project-meta">
+            <strong>Timeline:</strong>
+            <time datetime="2024-08">August 2024</time> —
+            <time datetime="2024-11">November 2024</time>
+          </p>
+          <p>
+            Engineered and launched a website that showcases various products,
+            allowing customers to access RAG-generated summaries of actual
+            reviews. Implemented sentiment analysis to enhance feature
+            evaluation and question answering, resulting in a 40% increase in
+            decision-making accuracy.
+          </p>
+          <h4>Key Features</h4>
+          <ul>
+            <li>RAG-generated summaries from actual product reviews</li>
+            <li>Advanced sentiment analysis for enhanced feature evaluation</li>
+            <li>AI-powered question answering system</li>
+            <li>40% improvement in customer decision-making accuracy</li>
+            <li>User-friendly website interface for product exploration</li>
+          </ul>
+          <a class="learn-link" href="#">Learn More</a>
+        </article>
+
+        <article>
+          <h3>AutoToll: Secure Toll Processing</h3>
+          <p class="project-meta">
+            <strong>Timeline:</strong> January 2023 — June 2023
+          </p>
+          <p>
+            Developed a GPS-based toll collection system using blockchain and
+            smart contracts for decentralized and transparent management.
+            Designed an intuitive UI that achieved a 60% reduction in manual
+            toll processing through secure, automated transactions and real-time
+            GPS tracking.
+          </p>
+          <h4>Key Features</h4>
+          <ul>
+            <li>GPS-based toll collection with real-time tracking</li>
+            <li>Ethereum blockchain integration with smart contracts</li>
+            <li>60% reduction in manual toll processing</li>
+            <li>Decentralized and transparent transaction management</li>
+            <li>
+              Enhanced security and accountability through blockchain records
+            </li>
+          </ul>
+          <a class="learn-link" href="#">Learn More</a>
+        </article>
+
+        <article>
+          <h3>QuickRide: DBMS-Based Vehicle Booking Platform</h3>
+          <p class="project-meta">
+            <strong>Timeline:</strong> September 2022 — October 2022
+          </p>
+          <p>
+            Streamlined vehicle reservations with an intuitive car booking
+            platform, improving booking efficiency by 30% and offering real-time
+            updates. Implemented secure login, signup, and payment gateways to
+            streamline onboarding and transactions, enhancing user experience
+            and security.
+          </p>
+          <h4>Key Features</h4>
+          <ul>
+            <ul>
+              <li>Intuitive car booking platform with real-time updates</li>
+              <li>30% improvement in booking efficiency</li>
+              <li>Secure user authentication and account management</li>
+              <li>Integrated payment gateway for streamlined transactions</li>
+              <li>Database management system for optimal performance</li>
+            </ul>
+          </ul>
+          <a class="learn-link" href="#">Learn More</a>
+        </article>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>I'd love to hear from you! Reach out anytime.</p>
+
+        <form
+          action="#"
+          method="post"
+          onsubmit="alert('Form submitted!'); return false;"
+        >
+          <div>
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter your full name"
+            />
+          </div>
+
+          <div>
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your email address"
+            />
+          </div>
+
+          <div>
+            <label for="message">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              placeholder="Tell me about your project or just say hello!"
+            ></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <aside>
+      <div class="container">
+        <section class="card">
+          <h3>Skills & Technologies</h3>
+          <ul>
+            <li>HTML5 &amp; CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React.js &amp; Node.js</li>
+            <li>Git &amp; Version Control</li>
+            <li>Docker and Kubernetes</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h3>Current Status</h3>
+          <ul>
+            <li>Available for new projects</li>
+            <li>Currently learning: Advanced React and TypeScript</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h3>Fun Facts</h3>
+          <ul>
+            <li>Coffee enthusiast</li>
+            <li>Sketching lover</li>
+            <li>Fitness enthusiast</li>
+          </ul>
+        </section>
+      </div>
+    </aside>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Kushal Choudhary. All rights reserved.</p>
+        <p>Connect with me:</p>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/Kushal3121"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/kushal-choudhary-a0a874196/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
