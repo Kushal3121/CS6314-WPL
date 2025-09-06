@@ -88,23 +88,32 @@ h2 {
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 2rem;
-  align-items: start;
+  align-items: center; /* Vertically align */
   padding: 1.5rem;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   margin-top: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Match font */
 }
 
 .about-img {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-text p {
   margin-bottom: 1rem;
   line-height: 1.7;
+  font-size: 1rem;
 }
 
 article {
@@ -174,44 +183,47 @@ button:hover {
   background: #4852c4;
 }
 
-aside {
-  background: var(--surface-2);
-  padding: 3rem 1rem;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-
-aside .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-}
-
-aside .card {
-  background: var(--card-bg);
-  padding: 1.5rem 1.25rem;
-  border-radius: 0.75rem;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
+.footer-cards {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: -1rem;
 }
 
-aside .card h3 {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-  font-size: 1.25rem;
-  color: var(--accent);
-  border-left: 4px solid var(--accent);
+.footer-card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.footer-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #5a4bff;
   padding-left: 0.5rem;
+  color: #333;
 }
 
-aside .card ul {
-  list-style: disc inside;
-  margin: 0;
+.footer-card ul {
+  list-style: none;
   padding: 0;
-  line-height: 1.6;
+  margin: 0;
+}
+
+.footer-card li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
 }
 
 footer {
